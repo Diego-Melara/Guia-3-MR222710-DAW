@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+    <div class="calc">
+    <form action="#" name="calculadora" id="calculadora">
+        <h3>Calculadora</h3>
+
+    <p id="pantalla">0</p>
+    <br>
+    <p>
+    <input type="button" class="especial" value="Backspace" onclick="back()"/>
+    <input type="button" class="especial" value="CE" onclick="cE()"/>
+    <input type="button" class="especial" value="C" onclick="c()"/>    
+    </p>
+    <p>
+    <input type="button" value="MC" onclick="mc('')">
+    <input type="button" value="1" onclick="num('1')">
+    <input type="button" value="2" onclick="num('2')">
+    <input type="button" value="3" onclick="num('3')">
+    <input type="button" value="/" onclick="ope('/')">   
+    </p>
+    <p>
+    <input type="button" value="MR" onclick="mr('')">
+    <input type="button" value="4" onclick="num('4')">
+    <input type="button" value="5" onclick="num('5')">
+    <input type="button" value="6" onclick="num('6')">
+    <input type="button" value="+" onclick="ope('+')">
+    </p>
+    <p>
+    <input type="button" value="MS" onclick="mr('')">
+    <input type="button" value="7" onclick="num('7')">
+    <input type="button" value="8" onclick="num('8')">
+    <input type="button" value="9" onclick="num('9')">
+    <input type="button" value="-" onclick="ope('-')">
+    
+    </p>
+    <p>
+    <input type="button" value="M+" onclick="m('')">
+    <input type="button" value="0" onclick="num('0')">
+    <input type="button" value="%" onclick="modulo('')">
+    <input type="button" value="sqrt" onclick="raiz('')">
+    <input type="button" value="*" onclick="ope('*')">
+
+    <input type="button" value="+/-" onclick="signo('')">
+    <input type="button" value="." onclick="num('.')">
+    <input type="button" value="1/x" onclick="inverso('')">
+    <input type="button" value="=" onclick="igual('')">     
+
+    </p>  
+</form>
+</div>
+<script src="js/calc.js"></script>
+</body>
+</html>

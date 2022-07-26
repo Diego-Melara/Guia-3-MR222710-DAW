@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clausuras JS</title>
+    <link rel="stylesheet" href="css/js.css">
+</head>
+<body>
+  <h1>¿Qué es una Clausura en JavaScript?</h1>
+<article>
+    <p>Una clausura o closure es una función que guarda referencias 
+    del estado adyacente (ámbito léxico). En otras palabras, una 
+    clausura permite acceder al ámbito de una función exterior desde 
+    una función interior. En JavaScript, las clausuras se crean cada 
+    vez que una función es creada. Las clausuras son muy importantes en cualquier lenguaje de programación, utilizadas en
+     varios escenarios donde puede crear variables en su ámbito privado o combinar funciones.</p>
+</article>
+
+<h1>Ejemplo para mostrar un nombre</h1>
+
+<div class="js">
+    <p>
+        <iniciar class="function">function iniciar(){</p> 
+            <p class="var">var nombre = promp("Ingrese su nombre porfavor");  // La variable nombre es una variable local creada por iniciar <br>
+           <p class="function"> function mostrarNombre(){  // La función mostrarNombre es una función interna, una clausura. </p> <br>
+             <p class="alert">alert (nombre);// Usa una variable declarada en la función externa. <br>}  </p>
+           
+           <p class="function"> mostrarNombre();<br>}</p> 
+           <br>
+          <p class="function">iniciar();</p>  
+    </p>
+</div>
+<input type="button" value="Ejecutar ejemplo" class="button" onclick="iniciar()">
+
+<div class="js">
+    <p class="function">function sumar(){</p> <br>
+        <p class="var">let num1, num2, resul;</p> <br>
+       <p class="igual"> num1=  prompt("Ingrese un número, cual sea");</p> <br>
+        <p class=" function">function opera(){</p> <br>
+            <p class="igual">num2= prompt("Ingrese un valor para suma");</p> <br>
+            <p class="igual">resul= parseFloat(num1) + parseFloat(num2);</p> <br>
+          <p class="function"> console.log(resul);</p> 
+          <p class="function">  }</p><br>
+          <p class="function">  opera();</p><br>
+          <p class="function"> }</p>  
+</div>
+<input type="button" value="Ejecutar ejemplo" class="button" onclick="sumar()">
+
+<div class="js">
+    <p class="function">function par(){</p> <br>
+        <p class="var">let num1, num2, resul;</p> <br>
+       <p class="igual"> num1=  prompt("Ingrese un número, cual sea");</p> <br>
+        <p class=" function">function opera(){</p> <br>
+            <p class="igual">num2= prompt("Ingrese un valor para operar modularmente");</p> <br>
+            <p class="igual">resul= parseFloat(num1) % parseFloat(num2);</p> <br>
+          <p class="function"> console.log(resul);</p> 
+          <p class="function">  }</p><br>
+          <p class="function">  opera();</p><br>
+          <p class="igual"> if(num1%num2==0){ <br>
+            console.log("Es par " + resul); <br>
+        }else{<br>
+            console.log("Es impar " + resul);<br>
+    
+        }</p>
+          <p class="function"> }</p>  
+</div>
+<input type="button" value="Ejecutar ejemplo" class="button" onclick="par()">
+<script src="clausura.js"></script>
+</body>
+</html>

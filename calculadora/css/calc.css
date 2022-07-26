@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+#pantalla{
+    width: 100%;
+    border: 2px black solid; text-align: right; 
+    position: relative;
+    padding: 0px 5px;
+    background-color: white; 
+    font-family: "courier new"; 
+    overflow: hidden;
+}
+.calc{
+    border: 3px blue ridge;
+    width: 250px;text-align: center;
+    background-color: #ccc;
+    margin: auto;
+    margin-top: 2.5em;
+
+    
+}
+h3{
+    color: #fff;
+    background: blue;
+    width: 100%;
+    font-weight: bold;
+    margin: auto;
+}
+.calc [type=button] { 
+    width: 45px; 
+    padding: 5px;
+  }
+.calc input.especial{
+    color: red;
+     width: 75px;
+  }
